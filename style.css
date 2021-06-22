@@ -9,7 +9,13 @@ h1 {
     text-align: center;
     height: 118px;
 }
-
+.mySlides {
+    display:none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
 header {
     background-color: rgb(146, 184, 228);
     text-align: center;
@@ -17,6 +23,7 @@ header {
     padding: 10px;
     position: sticky;
     top: 0;
+    z-index: 1;
   }
 body {
     background-color:rgb(27, 40, 63);
