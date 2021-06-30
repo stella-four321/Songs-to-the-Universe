@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/index.html#about -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stella Fournier</title>
+    <link rel="stylesheet" href="./Stella Fournier_files/style.css">
+    <link rel="stylesheet" href="./Stella Fournier_files/font-awesome.min.css">
+    <link href="./Stella Fournier_files/icon" rel="stylesheet">
+    <link rel="stylesheet" href="./Stella Fournier_files/w3.css">
+    <link rel="stylesheet" href="./Stella Fournier_files/css">
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="http://127.0.0.1:5500/index.html#music">Music</a>
+        <a href="http://127.0.0.1:5500/index.html#about">About Me</a>
+    </div>
+    
+    <div class="w3-content w3-display-container">
+        <br><br><br>
+            
+        <img class="mySlides" src="./Stella Fournier_files/album_1.jpg" width="700" height="700" style="display: block;">
+        <img class="mySlides" src="./Stella Fournier_files/christmasLoneliness.png" width="65%" height="65%" style="display: none;">
+        <img class="mySlides" src="./Stella Fournier_files/coucou.png" width="100%" height="100%" style="display: none;">
+
+        <br><br><br><br>
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
+            
+    </div>
+        
+    
+    <div>
+        <h2>
+            <br><br><br id="music"><br>Songs
+        </h2>
+    </div>
+  
+    <div class="midnav">
+        
+        <br><a href="http://127.0.0.1:5500/Sun.html">Sun</a>
+        <br><br><br><a href="http://127.0.0.1:5500/Slide.html">Slide</a>
+        <br><br><br><a href="http://127.0.0.1:5500/TheBlueLady.html">The Blue Lady</a>
+        <br><br><br><a href="http://127.0.0.1:5500/LeavingEarthBehind.html">Leaving Earth Behind</a>
+        <br><br><br><a href="http://127.0.0.1:5500/OneLittleWord.html">One Little Word</a>
+        <br><br><br><a href="http://127.0.0.1:5500/I&#39;mAButterfly.html">I'm a Butterfly</a>
+        <br><br><br><a href="http://127.0.0.1:5500/HighStraightToTheLows.html">High, Straight to the Lows</a>
+        <br><br><br><a href="http://127.0.0.1:5500/SatelliteBoulevard.html">Satellite Boulevard</a>
+        <br><br><br><br><br><br>
+    </div>
+
+    
+    <div>
+        <br><br><br><br id="about"><br><br>
+        <h2>
+            About Me
+        </h2>
+        <p>Hi, I'm Stella Fournier</p>
+        <p>Hi, I'm Stella Fournier</p>
+        <p>Hi, I'm Stella Fournier</p>
+        <p>Hi, I'm Stella Fournier</p>
+        <p>Hi, I'm Stella Fournier</p>
+        <p>Hi, I'm Stella Fournier</p>
+        <p>Hi, I'm Stella Fournier</p>
+        <p>Hi, I'm Stella Fournier</p>
+        <p>Hi, I'm Stella Fournier</p>
+        <br><br><br><br><br><br><br><br><br>
+    </div>
+
+        
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <a class="foot" href="https://www.youtube.com/channel/UCuxbjWSTIRigigt_Hiff-fg" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>  
+        <a href="https://www.facebook.com/stella.fournier.1" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/stella_four321/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/stella-fournier-43aa36104/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </footer>
+       
+    
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+</script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+</body></html>
